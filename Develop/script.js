@@ -12,7 +12,18 @@ generateBtn.onclick = function(){
       var howmany = window.prompt ("How many characters do you want in your password?");
       console.log (howmany);
 
-    
+      var lowercase = window.confirm ("Would you like lowercase letters in your password?");
+      console.log (lowercase);
+
+      var uppercase = window.confirm ("Would you like uppercase letters in your password?");
+      console.log (uppercase);
+
+      var special = window.confirm ("Would you like special characters in your password?");
+      console.log (special);
+
+      var numeric = window.confirm ("Would you like numbers in your password?");
+      console.log (numeric);
+
 
 }
             
