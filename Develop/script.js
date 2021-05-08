@@ -44,6 +44,11 @@ generateBtn.onclick = function(){
                 console.log (nmchoice);
 
       
+                        for (var i = 0; i < howmany; i++) {
+                          var password = lwchoice + upchoice + spchoice + nmchoice;
+                          console.log (password);
+                        }
+          
 
 }
             
