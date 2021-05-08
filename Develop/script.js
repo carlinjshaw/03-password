@@ -24,6 +24,26 @@ generateBtn.onclick = function(){
       var numeric = window.confirm ("Would you like numbers in your password?");
       console.log (numeric);
 
+      
+
+                if (lowercase === true) {
+                  var lwchoice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                }
+                if (uppercase === true) {
+                  var upchoice = uppercases[Math.floor(Math.random() * uppercases.length)];
+                }
+                if (special === true) {
+                  var spchoice = specials[Math.floor(Math.random() * specials.length)];
+                }
+                if (numeric === true) {
+                  var nmchoice = numerics[Math.floor(Math.random() * numerics.length)];
+                }
+                console.log (lwchoice); 
+                console.log (upchoice); 
+                console.log (spchoice);
+                console.log (nmchoice);
+
+      
 
 }
             
