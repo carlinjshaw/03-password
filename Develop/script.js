@@ -18,6 +18,15 @@ function passwordgen() {
                 var howmany = window.prompt ("How many characters do you want in your password?");
                 console.log (howmany);
                 
+                         if (8 > howmany) {
+                           window.alert("Invalid number. Please choose a character length from 8 to 132 characters.")
+                           return;
+                         }
+                         if (howmany > 132) {
+                          window.alert("Invalid number. Please choose a character length from 8 to 132 characters.")
+                          return;
+                        }
+
                 var lowercase = window.confirm ("Would you like lowercase letters in your password?");
                 console.log (lowercase);
                 
