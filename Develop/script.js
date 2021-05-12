@@ -40,47 +40,344 @@ function passwordgen() {
                 console.log (numeric);
               
                  
-                // function randomgen() {
-                for (var i = 0; i < howmany ; i++) {
-
-                            var chartype = ['lowercase','uppercase','special','numeric'];
-
-                                  // var ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
-                                  // console.log (ctchoice);
-
-                                  var ctchoice
-ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
-console.log  (ctchoice);
-var choice
-
-                                        if (lowercase === true && ctchoice === 'lowercase') {
-                                          choice = lowercases[Math.floor(Math.random() * lowercases.length)];
-                                          console.log (choice);
-                                        }
-                                        else if (uppercase === true && ctchoice === 'uppercase') {
-                                          choice = uppercases[Math.floor(Math.random() * uppercases.length)];
-                                          console.log (choice); 
-                                        }
-                                        else if (special === true && ctchoice === 'special') {
-                                          choice = specials[Math.floor(Math.random() * specials.length)];
-                                          console.log (choice);
-                                        }
-                                        else if (numeric === true && ctchoice === 'numeric') {
-                                          choice = numerics[Math.floor(Math.random() * numerics.length)];
-                                          console.log (choice);
-                                        }
-                                        // console.log (lwchoice + upchoice + spchoice + nmchoice); 
-password = password + choice 
-console.log (password);
+               
+                
+                
+                if (lowercase === true && uppercase === true && special ===true && numeric === true){
+  var chartype = ['lowercase','uppercase','special','numeric'];
+  for (var i = 0; i < howmany ; i++) {
+    var ctchoice
+    ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+    console.log  (ctchoice);
+    var choice
+    if (ctchoice === 'lowercase') {
+      choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+      console.log (choice);
+    }
+    else if (ctchoice === 'uppercase') {
+      choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+      console.log (choice); 
+    }
+    else if (ctchoice === 'special') {
+      choice = specials[Math.floor(Math.random() * specials.length)];
+      console.log (choice);
+    }
+    else if (ctchoice === 'numeric') {
+      choice = numerics[Math.floor(Math.random() * numerics.length)];
+      console.log (choice);
+    }
+    password = password + choice 
+  }
 }
 
+        if (lowercase === false && uppercase === true && special ===true && numeric === true){
+          var chartype = ['uppercase','special','numeric'];
 
-//                         }
-// randomgen ()
+          for (var i = 0; i < howmany ; i++) {
+            var ctchoice
+            ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+            console.log  (ctchoice);
+            var choice
+            if (ctchoice === 'uppercase') {
+              choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+              console.log (choice); 
+            }
+            else if (ctchoice === 'special') {
+              choice = specials[Math.floor(Math.random() * specials.length)];
+              console.log (choice);
+            }
+            else if (ctchoice === 'numeric') {
+              choice = numerics[Math.floor(Math.random() * numerics.length)];
+              console.log (choice);
+            }
+            password = password + choice 
+          }
+        }
+        
 
+                if (lowercase === true && uppercase === false && special ===true && numeric === true){
+                  var chartype = ['lowercase','special','numeric'];
+
+                  for (var i = 0; i < howmany ; i++) {
+                    var ctchoice
+                    ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                    console.log  (ctchoice);
+                    var choice
+                    if (ctchoice === 'lowercase') {
+                      choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                      console.log (choice);
+                    }
+                    else if (ctchoice === 'special') {
+                      choice = specials[Math.floor(Math.random() * specials.length)];
+                      console.log (choice);
+                    }
+                    else if (ctchoice === 'numeric') {
+                      choice = numerics[Math.floor(Math.random() * numerics.length)];
+                      console.log (choice);
+                    }
+                    password = password + choice 
+                  }
+                }
+
+                        if (lowercase === true && uppercase === true && special === false && numeric === true){
+                          var chartype = ['lowercase','uppercase','numeric'];
+
+                          for (var i = 0; i < howmany ; i++) {
+                            var ctchoice
+                            ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                            console.log  (ctchoice);
+                            var choice
+                            if (ctchoice === 'lowercase') {
+                              choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                              console.log (choice);
+                            }
+                            else if (ctchoice === 'uppercase') {
+                              choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+                              console.log (choice); 
+                            }
+                            else if (ctchoice === 'numeric') {
+                              choice = numerics[Math.floor(Math.random() * numerics.length)];
+                              console.log (choice);
+                            }
+                            password = password + choice 
+                          }
+                        }
+
+                                if (lowercase === true && uppercase === true && special ===true && numeric === false){
+                                  var chartype = ['lowercase','uppercase','special'];
+
+                                  for (var i = 0; i < howmany ; i++) {
+                                    var ctchoice
+                                    ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                                    console.log  (ctchoice);
+                                    var choice
+                                    if (ctchoice === 'lowercase') {
+                                      choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                                      console.log (choice);
+                                    }
+                                    else if (ctchoice === 'uppercase') {
+                                      choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+                                      console.log (choice); 
+                                    }
+                                    else if (ctchoice === 'special') {
+                                      choice = specials[Math.floor(Math.random() * specials.length)];
+                                      console.log (choice);
+                                    }
+                                    password = password + choice 
+                                  }
+                                }
+
+                                        if (lowercase === false && uppercase === false && special ===true && numeric === true){
+                                          var chartype = ['special','numeric'];
+
+                                          for (var i = 0; i < howmany ; i++) {
+                                            var ctchoice
+                                            ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                                            console.log (ctchoice);
+                                            var choice
+                                            if (ctchoice === 'special') {
+                                              choice = specials[Math.floor(Math.random() * specials.length)];
+                                              console.log (choice);
+                                            }
+                                            else if (ctchoice === 'numeric') {
+                                              choice = numerics[Math.floor(Math.random() * numerics.length)];
+                                              console.log (choice);
+                                            }
+                                            password = password + choice 
+                                          }
+                                        }
+
+                                                  if (lowercase === false && uppercase === true && special ===false && numeric === true){
+                                                    var chartype = ['uppercase','numeric'];
+                                                    for (var i = 0; i < howmany ; i++) {
+                                                      var ctchoice
+                                                      ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                                                      console.log  (ctchoice);
+                                                      var choice
+                                                      if (ctchoice === 'uppercase') {
+                                                        choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+                                                        console.log (choice); 
+                                                      }
+                                                    
+                                                      else if (ctchoice === 'numeric') {
+                                                        choice = numerics[Math.floor(Math.random() * numerics.length)];
+                                                        console.log (choice);
+                                                      }
+                                                      password = password + choice 
+                                                    }
+                                                  }
+
+                                                          if (lowercase === false && uppercase === true && special ===true && numeric === false){
+                                                            var chartype = ['uppercase','special'];
+                                                            for (var i = 0; i < howmany ; i++) {
+                                                              var ctchoice
+                                                              ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                                                              console.log  (ctchoice);
+                                                              var choice
+                                                              if (ctchoice === 'uppercase') {
+                                                                choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+                                                                console.log (choice); 
+                                                              }
+                                                              else if (ctchoice === 'special') {
+                                                                choice = specials[Math.floor(Math.random() * specials.length)];
+                                                                console.log (choice);
+                                                              }                                                     
+                                                              password = password + choice 
+                                                            }
+                                                          }
+
+                                                if (lowercase === true && uppercase === false && special === false && numeric === true){
+                                                  var chartype = ['lowercase','numeric'];
+                                                  for (var i = 0; i < howmany ; i++) {
+                                                    var ctchoice
+                                                    ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                                                    console.log  (ctchoice);
+                                                    var choice
+                                                    if (ctchoice === 'lowercase') {
+                                                      choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                                                      console.log (choice);
+                                                    }                                                  
+                                                    else if (ctchoice === 'numeric') {
+                                                      choice = numerics[Math.floor(Math.random() * numerics.length)];
+                                                      console.log (choice);
+                                                    }
+                                                    password = password + choice 
+                                                  }
+                                                }
+
+                                        if (lowercase === true && uppercase === false && special === true && numeric === false){
+                                          var chartype = ['lowercase','special'];
+                                          for (var i = 0; i < howmany ; i++) {
+                                            var ctchoice
+                                            ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                                            console.log  (ctchoice);
+                                            var choice
+                                            if (ctchoice === 'lowercase') {
+                                              choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                                              console.log (choice);
+                                            }                                           
+                                            else if (ctchoice === 'special') {
+                                              choice = specials[Math.floor(Math.random() * specials.length)];
+                                              console.log (choice);
+                                            }                                         
+                                            password = password + choice 
+                                          }
+                                        }
+
+                                  if (lowercase === true && uppercase === true && special === false && numeric === false){
+                                    var chartype = ['lowercase','uppercase'];
+                                    for (var i = 0; i < howmany ; i++) {
+                                      var ctchoice
+                                      ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                                      console.log  (ctchoice);
+                                      var choice
+                                      if (ctchoice === 'lowercase') {
+                                        choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                                        console.log (choice);
+                                      }
+                                      else if (ctchoice === 'uppercase') {
+                                        choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+                                        console.log (choice); 
+                                      }
+                                      password = password + choice 
+                                    }
+                                  }
+
+                            if (lowercase === true && uppercase === false && special === false && numeric === false){
+                              var chartype = ['lowercase'];
+                              for (var i = 0; i < howmany ; i++) {
+                                var ctchoice
+                                ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                                console.log  (ctchoice);
+                                var choice
+                                if (ctchoice === 'lowercase') {
+                                  choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                                  console.log (choice);
+                                }
+                                password = password + choice 
+                              }
+                            }
+
+                      if (lowercase === false && uppercase === true && special ===false && numeric === false){
+                        var chartype = ['uppercase'];
+                        for (var i = 0; i < howmany ; i++) {
+                          var ctchoice
+                          ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                          console.log  (ctchoice);
+                          var choice
+                          if (ctchoice === 'uppercase') {
+                            choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+                            console.log (choice); 
+                          }
+                          password = password + choice 
+                        }
+                      }
+
+                if (lowercase === false && uppercase === false && special ===true && numeric === false){
+                  var chartype = ['special'];
+                  for (var i = 0; i < howmany ; i++) {
+                    var ctchoice
+                    ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                    console.log  (ctchoice);
+                    var choice
+                    if (ctchoice === 'special') {
+                      choice = specials[Math.floor(Math.random() * specials.length)];
+                      console.log (choice);
+                    }
+                    password = password + choice 
+                  }
+                }
+
+          if (lowercase === false && uppercase === false && special ===false && numeric === true){
+            var chartype = ['numeric'];
+            for (var i = 0; i < howmany ; i++) {
+              var ctchoice
+              ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+              console.log  (ctchoice);
+              var choice
+              if (ctchoice === 'numeric') {
+                choice = numerics[Math.floor(Math.random() * numerics.length)];
+                console.log (choice);
               }
-  
-return password;
+              password = password + choice 
+            }
+          }
+
+
+        // for (var i = 0; i < howmany ; i++) {
+          
+                //                         var ctchoice
+                //                         ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
+                //                         console.log  (ctchoice);
+                //                         var choice
+                
+                //                         if (lowercase === true && ctchoice === 'lowercase') {
+                  //                           choice = lowercases[Math.floor(Math.random() * lowercases.length)];
+                  //                           console.log (choice);
+                  //                         }
+                  //                         else if (uppercase === true && ctchoice === 'uppercase') {
+                    //                           choice = uppercases[Math.floor(Math.random() * uppercases.length)];
+                    //                           console.log (choice); 
+                    //                         }
+                    //                         else if (special === true && ctchoice === 'special') {
+                      //                           choice = specials[Math.floor(Math.random() * specials.length)];
+                      //                           console.log (choice);
+                      //                         }
+                      //                         else if (numeric === true && ctchoice === 'numeric') {
+                        //                           choice = numerics[Math.floor(Math.random() * numerics.length)];
+                        //                           console.log (choice);
+                        //                         }
+                        
+                        
+                        
+                        //                       }
+                        
+                        // password = password + choice 
+                        // console.log (password);
+                        
+console.log (password);
+  return password;
+                                    }
 }
 passwordgen ()
                          
