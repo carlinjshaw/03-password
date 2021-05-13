@@ -1,4 +1,4 @@
-# Password Generator 
+
 
 This password generator starts with 5 prompts, has fail-safe if incorrect amount of charcaters is selected, and then a series of if statements ensues in tehe code. 
 Each if statement represents every possible combination of the four binary options. 
