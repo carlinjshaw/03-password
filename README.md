@@ -6,4 +6,3 @@ In each if statement is an array of every relevant character type, math.random o
 Finally the generated password is put into the textarea html element by the ID password. 
 
 
-![image](https://user-images.githubusercontent.com/82618604/118060011-d9aa1700-b35f-11eb-8deb-074052609cc5.png)
