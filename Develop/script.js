@@ -1,7 +1,3 @@
-// Assignment code here
-// Get references to the #generate element
-
-
 var lowercases = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var uppercases = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 var specials = ['~','!','@','#','$','%','^','&','*','(',')','_','+',':',';','<','>','?','.'];
@@ -344,62 +340,14 @@ function passwordgen() {
           }
 
 
-        // for (var i = 0; i < howmany ; i++) {
-          
-                //                         var ctchoice
-                //                         ctchoice = chartype[Math.floor(Math.random() * chartype.length)];
-                //                         console.log  (ctchoice);
-                //                         var choice
-                
-                //                         if (lowercase === true && ctchoice === 'lowercase') {
-                  //                           choice = lowercases[Math.floor(Math.random() * lowercases.length)];
-                  //                           console.log (choice);
-                  //                         }
-                  //                         else if (uppercase === true && ctchoice === 'uppercase') {
-                    //                           choice = uppercases[Math.floor(Math.random() * uppercases.length)];
-                    //                           console.log (choice); 
-                    //                         }
-                    //                         else if (special === true && ctchoice === 'special') {
-                      //                           choice = specials[Math.floor(Math.random() * specials.length)];
-                      //                           console.log (choice);
-                      //                         }
-                      //                         else if (numeric === true && ctchoice === 'numeric') {
-                        //                           choice = numerics[Math.floor(Math.random() * numerics.length)];
-                        //                           console.log (choice);
-                        //                         }
-                        
-                        
-                        
-                        //                       }
-                        
-                        // password = password + choice 
-                        // console.log (password);
+ 
+var mypass =document.getElementById('password')
+mypass.textContent = (password)
                         
 console.log (password);
   return password;
-                                    }
+                    
+}
 }
 passwordgen ()
-                         
-              
-
-                                   
-                                   
-                                  
-                                  
-                               
-
-
-
-
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+             
