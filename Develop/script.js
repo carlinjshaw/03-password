@@ -18,7 +18,7 @@ function passwordgen() {
                            window.alert("Invalid number. Please choose a character length from 8 to 132 characters.")
                            return;
                          }
-                         if (howmany > 132) {
+                         if (howmany > 128) {
                           window.alert("Invalid number. Please choose a character length from 8 to 132 characters.")
                           return;
                         }
